@@ -1,0 +1,23 @@
+%div.red_background
+  Dude man sup.
+
+.blue_background
+  Dude man also sup.
+
+= link_to "Funk Names", search_names_ques_path
+= render 'ques/search'
+
+%h4 These Guys are in Queue
+= link_to "I need help!", new_que_path
+%ul
+  - @people_in_que.each do |person|
+    = render 'ques/student', student: person
+
+%h4 People Resolved
+
+- @people_who_are_inifintely_smarter_then_they_were_before_but_still_cant_spell.each do |person|
+  = person.name
+  helped at
+  = person.updated_at.strftime("%l:%M%p")
+  %br
+

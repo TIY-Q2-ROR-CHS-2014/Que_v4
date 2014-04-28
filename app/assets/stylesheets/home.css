@@ -1,0 +1,15 @@
+.in_progress {
+  color: orange;
+}
+
+.in_progress a {
+  color: orange; 
+}
+
+.in_progress a:visited {
+  color: orange;
+}
+
+.new {
+  color: green;
+}

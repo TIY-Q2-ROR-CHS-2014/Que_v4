@@ -1,0 +1,12 @@
+= form_tag search_names_ques_path, method: :get do
+  = text_field_tag "q", "", placeholder: "Search..."
+  = submit_tag "Search"
+
+/ Form for
+/ = form_for @patient do |f|
+/   = text_field :name
+/   Form for will turn the above into this:
+/   patient[name]
+/   this will come across via your controller:
+/   { patient: { name: "Jim" } }
+/   params[:patient]
