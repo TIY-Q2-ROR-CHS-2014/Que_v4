@@ -83,6 +83,6 @@ class QuesController < ApplicationController
   
   private
     def que_params
-      params.require(:que).permit(:name)
+      params.require(:que).permit(:name, :email, :image)
     end
 end

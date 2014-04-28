@@ -1,8 +1,0 @@
-<%= form_for @que do |f| %>
-  <%= render 'layouts/error_messages', object: @que %>
-  <%= f.label :name %>
-  <%= f.text_field :name, placeholder: "Name" %>
-  <br>
-  <%= f.submit %>
-<% end %>
-<%= link_to "Home", root_path %>

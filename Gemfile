@@ -49,5 +49,5 @@ gem 'spring',        group: :development
 
 gem 'workflow'
 gem 'haml'
-
-
+gem 'paperclip'
+gem 'letter_opener', group: :development
