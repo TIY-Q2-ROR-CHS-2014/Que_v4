@@ -7,7 +7,8 @@ gem 'rails', '4.1.0'
 # gem 'sqlite3'
 
 # This is the database we want to use!
-gem 'mysql2'
+gem 'mysql2', group: :development
+gem 'pg', group: :production
 # bundle install --without production
 # This will install all gems except what's in the 
 # production group
