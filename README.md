@@ -9,6 +9,7 @@
 - in Gemfile:
   - gem 'pg', group: :production
   - gem 'mysql2', group: :development
+- bundle install --without production
 - heroku create <name>
   - if you don't supply a name, heroku will supply one for you
 - git push heroku master
